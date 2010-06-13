@@ -8,7 +8,7 @@ The [compiled extension](http://github.com/robwilkerson/Read-in-Google-Reader/bl
 
 1. Download the [compiled extension](http://github.com/robwilkerson/Read-in-Google-Reader/blob/master/target/AddToGoogle.safariextz).
 
-  **NOTE:** You may have to right click (or option-click) and select one of the "Download Linked File" options.
+    **NOTE:** You may have to right click (or option-click) and select one of the "Download Linked File" options.
 
 1. Double click the downloaded file to install.
 
