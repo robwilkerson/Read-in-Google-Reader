@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<script type="text/javascript" charset="utf-8">
+	safari.application.addEventListener( 'message', listen, true );
+	
+	var settings = null;
+	
+	function listen( msgEvent ) {
+		console.log( 'Message received by global.html' );
+		
+		switch( msgEvent.name ) {
+			case 'canLoad':
+				console.log( 'Retrieving settings' );
+				
+				settings = {
+					'igoogle': safari.extension.settings.getItem( 'igoogle' )
+				}
+				
+				console.log( 'Returning settings' );
+				
+				msgEvent.message = settings;
+				break;
+		}
+		
+	}
+	
+</script>

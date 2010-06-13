@@ -1,10 +1,30 @@
-document.addEventListener("beforeload", handleBeforeLoadEvent, true);
+var settings = null;
 
-function handleBeforeLoadEvent(event)
-{
-    var url = window.location.href;
-    
-    if ( /feed:\/\//.test(url)) {
-        window.location = 'http://www.google.com/ig/addtoreader?feedurl=' + encodeURI( url.replace( 'feed://', 'http://' ) );
-    }
+document.addEventListener( 'beforeload', getSettings, true );
+
+function getSettings() {
+	if( !settings ) {
+		settings = safari.self.tab.canLoad( event );
+		
+		console.log( 'Settings returned to content.js' );
+		console.log( settings );
+		
+		console.log( 'Redirecting...' );
+		redirect();
+	}
+}
+
+function redirect() {
+	var url = window.location.href;
+	
+	if( /feed:\/\//.test( url ) ) {
+		if( !settings.igoogle ) {
+			console.log( 'Bypassing iGoogle' );
+			window.location = 'http://www.google.com/ig/addtoreader?feedurl=' + encodeURI( url.replace( 'feed://', 'http://' ) );
+		}
+		else {
+			console.log( 'Displaying the iGoogle option' );
+			window.location = 'http://www.google.com/ig/add?feedurl=' + encodeURI(url.replace('feed://', 'http://'));
+		}
+	}
 }
