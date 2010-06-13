@@ -4,9 +4,9 @@ A simple Safari extension that hijacks the RSS button in the address bar and red
 
 ## Installation
 
-The [compiled extension](http://github.com/robwilkerson/Read-in-Google-Reader/blob/master/target/AddToGoogle.safariextz) is located in the `target/` directory.
+The [compiled extension](http://github.com/robwilkerson/Read-in-Google-Reader/raw/master/target/AddToGoogle.safariextz) is located in the `target/` directory.
 
-1. Download the [compiled extension](http://github.com/robwilkerson/Read-in-Google-Reader/blob/master/target/AddToGoogle.safariextz).
+1. Download the [compiled extension](http://github.com/robwilkerson/Read-in-Google-Reader/raw/master/target/AddToGoogle.safariextz).
 
     **NOTE:** You may have to right click (or option-click) and select one of the "Download Linked File" options.
 
