@@ -50,7 +50,9 @@
 			<string>All</string>
 		</dict>
 	</dict>
+	<key>Update Manifest URL</key>
+	<string>http://robwilkerson.org/_resources/projects/safari/extensions/AddToGoogle.plist</string>
 	<key>Website</key>
-	<string>http://robwilkerson.org</string>
+	<string>http://robwilkerson.org/2010/06/16/add-to-google-reader-extension-for-safari-5/</string>
 </dict>
 </plist>
