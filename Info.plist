@@ -51,7 +51,7 @@
 		</dict>
 	</dict>
 	<key>Update Manifest URL</key>
-	<string>http://robwilkerson.org/_resources/projects/safari/extensions/AddToGoogle.plist</string>
+	<string>http://robwilkerson.org/_resources/projects/safari/extensions/AddToGoogle-update.plist</string>
 	<key>Website</key>
 	<string>http://codaset.com/robwilkerson/add-to-google-reader/wiki</string>
 </dict>
