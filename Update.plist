@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-        <key>Extension Updates</key>
-        <array>
-            <dict>
-                <key>CFBundleIdentifier</key>
-                <string>com.chuprin.safari.reader</string>
-                <key>Team Identifier</key>
-                <string>BX838ZY3HG</string>
-                <key>CFBundleVersion</key>
-                <string>1.0</string>
-                <key>CFBundleShortVersionString</key>
-                <string>1.0</string>
-                <key>URL</key>
-                <string>http://github.com/downloads/Chupa/Read-in-Google-Reader/AddToGoogle.safariextz</string>
-            </dict>
-        </array>
-    </dict>
+<dict>
+   <key>Extension Updates</key>
+   <array>
+     <dict>
+       <key>CFBundleIdentifier</key>
+       <string>org.robwilkerson.safari.reader</string>
+       <key>Developer Identifier</key>
+       <string>DYW2C252RK</string>
+       <key>CFBundleVersion</key>
+       <string>1.1.1</string>
+       <key>CFBundleShortVersionString</key>
+       <string>1.1.1</string>
+       <key>URL</key>
+       <string>http://robwilkerson.org/_resources/projects/safari/extensions/AddToGoogle.safariextz</string>
+     </dict>
+   </array>
+</dict>
 </plist>

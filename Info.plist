@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>Author</key>
-	<string>Alexander Chuprin</string>
+	<string>Rob Wilkerson</string>
 	<key>CFBundleDisplayName</key>
 	<string>Add to Google Reader</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.chuprin.safari.reader</string>
+	<string>org.robwilkerson.safari.reader</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1.0</string>
+	<string>1.1.1</string>
 	<key>CFBundleVersion</key>
-	<string>1.1.0</string>
+	<string>1.1.1</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
@@ -39,7 +39,7 @@
 		</array>
 	</dict>
 	<key>Description</key>
-	<string>Add RSS feed to google reader by clicking on RSS icon.</string>
+	<string>Subscribe to feeds in Google Reader using Safari's RSS button. Forked from Alexander Chuprin's extension.</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
@@ -51,6 +51,6 @@
 		</dict>
 	</dict>
 	<key>Website</key>
-	<string>http://chuprin.com</string>
+	<string>http://robwilkerson.org</string>
 </dict>
 </plist>
