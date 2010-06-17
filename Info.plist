@@ -11,9 +11,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1.2</string>
+	<string>1.1.3</string>
 	<key>CFBundleVersion</key>
-	<string>4</string>
+	<string>5</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
@@ -53,6 +53,6 @@
 	<key>Update Manifest URL</key>
 	<string>http://robwilkerson.org/_resources/projects/safari/extensions/AddToGoogle.plist</string>
 	<key>Website</key>
-	<string>http://robwilkerson.org/2010/06/16/add-to-google-reader-extension-for-safari-5/</string>
+	<string>http://codaset.com/robwilkerson/add-to-google-reader/wiki</string>
 </dict>
 </plist>
