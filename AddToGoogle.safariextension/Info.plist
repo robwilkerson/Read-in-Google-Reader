@@ -11,9 +11,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1.4</string>
+	<string>1.1.5</string>
 	<key>CFBundleVersion</key>
-	<string>6</string>
+	<string>7</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
@@ -21,11 +21,6 @@
 	</dict>
 	<key>Content</key>
 	<dict>
-		<key>Blacklist</key>
-		<array>
-			<string>http://*/*</string>
-			<string>https://*/*</string>
-		</array>
 		<key>Scripts</key>
 		<dict>
 			<key>Start</key>
@@ -33,10 +28,6 @@
 				<string>content.js</string>
 			</array>
 		</dict>
-		<key>Whitelist</key>
-		<array>
-			<string>feed://*/*</string>
-		</array>
 	</dict>
 	<key>Description</key>
 	<string>Subscribe to feeds in Google Reader using Safari's RSS button. Forked from Alexander Chuprin's extension.</string>
@@ -46,6 +37,8 @@
 	<dict>
 		<key>Website Access</key>
 		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
 			<key>Level</key>
 			<string>All</string>
 		</dict>
