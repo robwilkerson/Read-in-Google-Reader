@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 
 <script type="text/javascript" charset="utf-8">
-	safari.application.addEventListener( 'message', listen, true );
+	safari.application.addEventListener( 'message', handle_message, true );
 	
-	var settings = null;
-	
-	function listen( msgEvent ) {
-		console.log( 'Message received by global.html' );
+	function handle_message( msgEvent ) {
+		// console.log( 'Message received by global.html' );
 		
 		switch( msgEvent.name ) {
-			case 'canLoad':
-				console.log( 'Retrieving settings' );
+			case 'subscribe':
+				// console.log( 'Subscribing to ' + msgEvent.message );
 				
-				settings = {
-					'igoogle': safari.extension.settings.getItem( 'igoogle' )
-				}
+				base_uri = safari.extension.settings.getItem( 'igoogle' )
+					? 'http://www.google.com/ig/add'
+					: 'http://www.google.com/ig/addtoreader';
+				feed_uri = msgEvent.message.replace( /^feed:(http(s):)?\/\//, 'http$2://' );
 				
-				console.log( 'Returning settings' );
-				
-				msgEvent.message = settings;
+				// console.log( '  --> Redirecting to ' + base_uri + '?feedurl=' + feed_uri );
+				safari.application.activeBrowserWindow.activeTab.url = base_uri + '?feedurl=' + feed_uri;
 				break;
 		}
 	}
-	
 </script>
