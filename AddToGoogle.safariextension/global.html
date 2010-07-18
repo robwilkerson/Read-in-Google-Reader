@@ -16,8 +16,8 @@
 				feed_uri = msgEvent.message.replace( /^feed:(http(s):)?\/\//, 'http$2://' );
 				
 				// console.log( '  --> Redirecting to ' + base_uri + '?feedurl=' + feed_uri );
-				safari.application.activeBrowserWindow.activeTab.url = base_uri + '?feedurl=' + feed_uri;
+				safari.application.activeBrowserWindow.activeTab.url = base_uri + '?feedurl=' + encodeURI( feed_uri );
 				break;
-		}
+		} urlencode
 	}
 </script>
