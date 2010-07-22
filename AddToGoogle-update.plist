@@ -10,9 +10,9 @@
        <key>Developer Identifier</key>
        <string>DYW2C252RK</string>
        <key>CFBundleVersion</key>
-       <string>9</string>
+       <string>10</string>
        <key>CFBundleShortVersionString</key>
-       <string>1.1.7</string>
+       <string>1.1.8</string>
        <key>URL</key>
        <string>http://robwilkerson.org/_resources/projects/safari/extensions/AddToGoogle.safariextz</string>
      </dict>

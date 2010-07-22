@@ -1,8 +1,25 @@
+const DEBUG = true;
+
 if( window === window.top ) {
-	// console.log( 'Thinking about subscribing' );
+	clog( 'Determining whether ' + window.location.href + ' is a feed...' );
 	
 	if( /^feed:/.test( window.location.href ) ) {
-		// console.log( 'It\'s a feed. Dispatching the subscribe message' );
-		safari.self.tab.dispatchMessage( 'subscribe', window.location.href );
+		clog( '--> It is. Redirecting...' );
+		
+		base_uri = 'http://www.google.com/reader/view/feed/';
+		feed_uri = window.location.href.replace( /^feed:(http(s):)?\/\//, 'http$2://' );
+		
+		clog( '----> Redirecting to ' + base_uri + encodeURIComponent( feed_uri ) );
+		
+		window.location.replace( base_uri + encodeURIComponent( feed_uri ) );
+	}
+	else {
+		clog( '--> It\'s not. Moving on.' );
+	}
+}
+
+function clog( msg ) {
+	if( DEBUG ) {
+		console.log( msg );
 	}
 }

@@ -11,14 +11,11 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1.7</string>
+	<string>1.1.8</string>
 	<key>CFBundleVersion</key>
-	<string>9</string>
+	<string>10</string>
 	<key>Chrome</key>
-	<dict>
-		<key>Global Page</key>
-		<string>global.html</string>
-	</dict>
+	<dict/>
 	<key>Content</key>
 	<dict>
 		<key>Scripts</key>
