@@ -20,6 +20,10 @@ if( window === window.top ) {
 
 function clog( msg ) {
 	if( DEBUG ) {
-		console.log( msg );
+		/** 
+		 * If the message is just an object, then adding the log prefix prevents
+		 * us from being able to expand the object.
+		 */ 
+		console.log( typeof msg != 'object' ? 'Add to Google Reader: ' + msg : msg );
 	}
 }
