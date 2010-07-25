@@ -1,6 +1,6 @@
 # Add To Google Reader Safari Extension
 
-A simple extension for Safari 5 that redirects Safari’s RSS button directly to Google Reader. There is an option, disabled by default, to stop at the page allowing the user to add the feed to iGoogle instead.
+A simple extension for Safari 5 that redirects Safari’s RSS button directly to Google Reader. There <del>is</del> was an option, disabled by default, to stop at the page allowing the user to add the feed to iGoogle instead. This option has been removed for reasons details on the [project wiki](http://codaset.com/robwilkerson/add-to-google-reader/wiki) and on [my personal blog](http://weblog.robwilkerson.org/post/847094732/add-to-google-reader-changes).
 
 ## Installation
 
