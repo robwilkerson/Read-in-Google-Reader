@@ -1,4 +1,4 @@
-const DEBUG = true;
+const DEBUG = false;
 
 if( window === window.top ) {
 	clog( 'Determining whether ' + window.location.href + ' is a feed...' );
